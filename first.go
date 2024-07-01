@@ -1,13 +1,10 @@
 package main
 
-import "fmt"
+import ("fmt"
+		"github.com/google/go-cmp/cmp")
 
 func main() {
-	fmt.Println("Hey, suck my dick!")
-
-	var age = 34
-	var car = "Mercedes"
-
-	fmt.Println("Age: ",age)
-	fmt.Println("Car: ", car)
+	a := 1
+	b := 2
+	fmt.Println(cmp.Equal(a,b))
 }
